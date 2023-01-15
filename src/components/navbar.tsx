@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+
 export function Mabarre() {
   return (
     <Navbar className='Menu' bg="warning" expand="lg">
@@ -17,10 +18,10 @@ export function Mabarre() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
+            <Nav.Link href="#action1">Accueil</Nav.Link>
+            <Nav.Link href="#action2">Liens</Nav.Link>
             <NavDropdown title="Véhicules" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="https://www.google.com/search?q=voitures+de+luxe&tbm=isch&ved=2ahUKEwiJ6aC8_Z78AhXhVaQEHXBkDU4Q2-cCegQIABAA&oq=voitures+de&gs_lcp=CgNpbWcQARgAMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECAAQQzoECCMQJzoICAAQgAQQsQM6CAgAELEDEIMBOgQIABADUNgKWOIhYJswaABwAHgAgAF2iAHvCZIBAzMuOZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=Y5ytY8mrCuGrkdUP8Mi18AQ&bih=595&biw=1280&client=firefox-b-d" target = "_blank">Prestige</NavDropdown.Item>
+              <NavDropdown.Item href={`/prestige/1`} target = "_blank">Prestige</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Utililitaires
               </NavDropdown.Item>
@@ -30,7 +31,7 @@ export function Mabarre() {
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#" disabled>
-              Link
+              Contact
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
@@ -40,7 +41,7 @@ export function Mabarre() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">click</Button>
+            <Button variant="outline-success">Recherchez</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
